@@ -1,0 +1,49 @@
+body {
+    /* background-image: url("{{ asset('img/bg.jpg') }}"); */
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.glassmorphism {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    color: white;
+}
+
+.glassmorphism h5 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.glassmorphism p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.glassmorphism img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 300px;
+    animation: floatAnimation 3s ease-in-out infinite alternate; 
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
